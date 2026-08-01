@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">TradeWithBrady charging bull</title>
+  <desc id="desc">A blue charging bull above the TB monogram with a green market arrow.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#39d6ff"/><stop offset=".42" stop-color="#1268ff"/><stop offset="1" stop-color="#061a58"/></linearGradient>
+    <linearGradient id="blue2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#59ecff"/><stop offset=".35" stop-color="#1578ff"/><stop offset="1" stop-color="#07143f"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#0aa94b"/><stop offset=".55" stop-color="#31ee73"/><stop offset="1" stop-color="#a4ff32"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".5" stop-color="#c8d2df"/><stop offset="1" stop-color="#5d6774"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#147dff" stop-opacity=".22"/><stop offset=".6" stop-color="#092452" stop-opacity=".08"/><stop offset="1" stop-opacity="0"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".7"/></filter>
+    <clipPath id="circle"><circle cx="600" cy="440" r="420"/></clipPath>
+  </defs>
+  <style>
+    .hero{transform-origin:600px 420px;animation:float 3.4s ease-in-out infinite}.arrow{transform-origin:870px 450px;animation:arrow 1.9s ease-in-out infinite}.ring{transform-origin:600px 440px;animation:ring 4s ease-in-out infinite}.eye{animation:eye 1.15s ease-in-out infinite alternate}.candle{transform-origin:center bottom;animation:candle 2.1s ease-in-out infinite alternate}.c2{animation-delay:.2s}.c3{animation-delay:.4s}.c4{animation-delay:.6s}.c5{animation-delay:.8s}.c6{animation-delay:1s}
+    @keyframes float{50%{transform:translateY(-13px) rotate(-.6deg)}}@keyframes arrow{50%{transform:translate(9px,-9px) scale(1.035)}}@keyframes ring{50%{opacity:1;filter:drop-shadow(0 0 18px #24dfff)}}@keyframes eye{to{opacity:.35}}@keyframes candle{to{transform:scaleY(1.08);filter:brightness(1.3)}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <rect width="1200" height="900" fill="transparent"/>
+  <circle cx="600" cy="440" r="445" fill="url(#halo)"/>
+  <circle class="ring" cx="600" cy="440" r="416" fill="none" stroke="url(#blue)" stroke-width="5" opacity=".85" filter="url(#glow)"/>
+  <path d="M253 675C345 625 420 650 493 584S630 582 704 500S840 505 925 385S1029 333 1080 254" fill="none" stroke="#19e674" stroke-width="9" opacity=".5" filter="url(#glow)"/>
+  <g opacity=".68" clip-path="url(#circle)">
+    <g fill="url(#green)" stroke="#7cff8e" stroke-width="2" filter="url(#glow)">
+      <rect class="candle" x="835" y="640" width="24" height="88"/><rect class="candle c2" x="878" y="600" width="24" height="128"/><rect class="candle c3" x="921" y="548" width="24" height="180"/><rect class="candle c4" x="964" y="491" width="24" height="237"/><rect class="candle c5" x="1007" y="415" width="24" height="313"/><rect class="candle c6" x="1050" y="335" width="24" height="393"/>
+    </g>
+  </g>
+  <g class="hero" filter="url(#shadow)">
+    <!-- tail -->
+    <path d="M338 328C252 286 207 327 224 377C244 433 320 398 332 351C305 370 270 370 258 344C248 320 279 303 338 328Z" fill="url(#blue2)" stroke="#69e7ff" stroke-width="5"/>
+    <path d="M220 318L252 292L272 319L240 335Z" fill="#258dff"/>
+    <!-- rear body and legs -->
+    <path d="M307 333C346 260 455 208 574 213C651 217 710 250 748 305L700 441C636 496 551 514 451 495C367 478 315 430 287 380Z" fill="url(#blue)" stroke="#73e8ff" stroke-width="6"/>
+    <path d="M355 436L318 563L383 566L438 467Z" fill="url(#blue2)" stroke="#55cfff" stroke-width="6"/>
+    <path d="M467 484L451 584L518 584L548 496Z" fill="url(#blue2)" stroke="#55cfff" stroke-width="6"/>
+    <!-- shoulder / neck -->
+    <path d="M560 247C613 182 712 163 788 203C838 230 867 279 860 333C852 393 811 438 747 456C699 470 648 459 612 427C641 367 628 304 560 247Z" fill="url(#blue2)" stroke="#66e3ff" stroke-width="6"/>
+    <!-- front legs -->
+    <path d="M697 421L739 551L807 548L756 399Z" fill="url(#blue2)" stroke="#55cfff" stroke-width="6"/>
+    <path d="M781 385L850 477L907 449L824 352Z" fill="url(#blue2)" stroke="#55cfff" stroke-width="6"/>
+    <!-- head -->
+    <path d="M772 241C830 205 902 214 947 263C982 301 987 354 961 396C939 431 899 451 856 445C814 439 779 411 765 374C748 330 750 277 772 241Z" fill="url(#blue)" stroke="#76ecff" stroke-width="6"/>
+    <path d="M855 432C882 444 922 439 948 416L972 447C944 482 891 493 850 466Z" fill="#0b2866" stroke="#4ecfff" stroke-width="5"/>
+    <!-- horns -->
+    <path d="M790 257C746 188 697 150 633 148C685 185 720 220 746 278Z" fill="url(#silver)" stroke="#83efff" stroke-width="5"/>
+    <path d="M917 258C969 202 1025 184 1080 203C1031 218 997 244 970 287Z" fill="url(#silver)" stroke="#83efff" stroke-width="5"/>
+    <!-- ears -->
+    <path d="M780 283L723 255L749 310Z" fill="#1676e8" stroke="#55d7ff" stroke-width="4"/><path d="M946 285L1001 263L968 315Z" fill="#1676e8" stroke="#55d7ff" stroke-width="4"/>
+    <!-- face planes -->
+    <path d="M813 265L859 308L825 375L781 329Z" fill="#198dff" opacity=".75"/><path d="M859 308L916 269L949 338L903 391L825 375Z" fill="#07378e" opacity=".85"/><path d="M825 375L903 391L856 445Z" fill="#0b54c7" opacity=".9"/>
+    <path class="eye" d="M805 323L829 319L816 338Z" fill="#fff" filter="url(#glow)"/><path class="eye" d="M913 320L936 326L918 340Z" fill="#fff" filter="url(#glow)"/>
+    <path d="M865 397L883 410L862 424L843 410Z" fill="#041431" stroke="#55d9ff" stroke-width="3"/>
+    <!-- polygon facets -->
+    <g fill="none" stroke="#48bfff" stroke-width="2" opacity=".36"><path d="M330 333L451 495L574 213L700 441M451 495L612 427L748 305M560 247L747 456L788 203M772 241L856 445L947 263M355 436L467 484M697 421L781 385"/></g>
+  </g>
+  <!-- TB monogram -->
+  <g transform="translate(275 510)" filter="url(#shadow)">
+    <path d="M0 0H330L286 73H195L91 350H8L112 73H-33Z" fill="url(#silver)" stroke="#fff" stroke-width="4"/>
+    <path d="M341 0H544C635 0 669 55 642 116C626 152 597 177 556 190C607 204 625 246 603 292C582 335 536 350 467 350H238L341 0ZM392 72L364 162H500C535 162 554 146 563 123C573 98 556 72 520 72H392ZM342 227L316 303H468C501 303 522 288 530 268C539 245 522 227 486 227H342Z" fill="url(#blue2)" stroke="#2b92ff" stroke-width="4"/>
+  </g>
+  <g class="arrow" filter="url(#glow)"><path d="M765 690C837 649 878 590 923 523L880 506L1032 382L1008 570L970 534C918 617 864 682 790 727Z" fill="url(#green)" stroke="#a7ff42" stroke-width="4"/></g>
+</svg>
