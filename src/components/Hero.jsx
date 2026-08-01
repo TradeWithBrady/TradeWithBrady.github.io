@@ -1,47 +1,16 @@
-import { useEffect, useRef, useState } from 'react'
-import { motion, useReducedMotion } from 'motion/react'
-
-const heroImage = '/bull-premium.svg'
-
-const particles = Array.from({ length: 14 }, (_, index) => ({
-  id: index,
-  left: `${8 + (index % 7) * 12}%`,
-  top: `${12 + (index % 5) * 12}%`,
-  delay: `${index * 0.2}s`,
-}))
+const heroImage = '/final.png'
 
 export default function Hero() {
-  const [mouse, setMouse] = useState({ x: 0, y: 0 })
-  const heroRef = useRef(null)
-  const prefersReducedMotion = useReducedMotion()
-
-  useEffect(() => {
-    const onMove = (event) => {
-      if (!heroRef.current) return
-      const rect = heroRef.current.getBoundingClientRect()
-      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 18
-      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 18
-      setMouse({ x, y })
-    }
-
-    window.addEventListener('mousemove', onMove)
-    return () => window.removeEventListener('mousemove', onMove)
-  }, [])
 
   return (
-    <section id="home" ref={heroRef} aria-labelledby="hero-title" className="relative overflow-hidden px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+    <section id="home" aria-labelledby="hero-title" className="relative overflow-hidden px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
       <div className="hero-backdrop absolute inset-0" />
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:72px_72px] opacity-35" />
       <div className="absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-400/20 blur-3xl" />
       <div className="absolute right-[-5%] top-[15%] h-72 w-72 rounded-full bg-emerald-400/10 blur-3xl" />
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-        <motion.div
-          initial={{ opacity: 0, x: -28 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-2xl"
-        >
+        <div className="max-w-2xl">
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200 shadow-[0_0_30px_rgba(34,211,238,0.18)]">
             <span className="h-2.5 w-2.5 rounded-full bg-cyan-300" />
             Premium market intelligence
@@ -70,50 +39,20 @@ export default function Hero() {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="relative mx-auto flex w-full max-w-xl items-center justify-center"
-          style={{ transform: prefersReducedMotion ? 'none' : `perspective(1000px) rotateX(${mouse.y * -0.05}deg) rotateY(${mouse.x * 0.05}deg)` }}
-        >
-          <div className="absolute inset-0 rounded-full bg-cyan-400/10 blur-3xl" />
-          <div className="absolute inset-8 rounded-full border border-cyan-400/20" />
-          <div className="absolute inset-0 animate-[spin_18s_linear_infinite] rounded-full border border-white/10" />
-          <div className="absolute inset-16 animate-[spin_28s_linear_infinite_reverse] rounded-full border border-emerald-400/20" />
-
-          <motion.img
+        <div className="relative mx-auto flex w-full max-w-2xl items-center justify-center">
+          <img
             src={heroImage}
             alt="Bull artwork representing TradeWithBrady's trading philosophy"
-            width={560}
-            height={560}
+            width={768}
+            height={768}
             loading="eager"
             decoding="async"
             fetchPriority="high"
-            className="relative z-10 h-[420px] w-full max-w-[420px] object-contain drop-shadow-[0_0_70px_rgba(34,211,238,0.3)] sm:h-[500px]"
-            animate={prefersReducedMotion ? undefined : { y: [0, -8, 0], rotate: [0, 1, 0], scale: [1, 1.01, 1] }}
-            transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut' }}
-            whileHover={{ scale: 1.03, y: -6, filter: 'drop-shadow(0 0 90px rgba(34,211,238,0.32))' }}
+            className="relative z-10 h-auto w-full max-w-[640px] object-contain mix-blend-screen"
           />
-
-          <div className="absolute bottom-6 left-6 rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur-xl">
-            <p className="text-[11px] uppercase tracking-[0.3em] text-slate-400">Live regime</p>
-            <p className="mt-1 text-lg font-semibold text-white">Momentum +</p>
-            <p className="text-sm text-emerald-400">Risk balanced</p>
-          </div>
-
-          {particles.map((particle) => (
-            <motion.span
-              key={particle.id}
-              className="pointer-events-none absolute h-2 w-2 rounded-full bg-cyan-300/70"
-              style={{ left: particle.left, top: particle.top }}
-              animate={prefersReducedMotion ? undefined : { y: [0, -18, 0], opacity: [0.4, 1, 0.4] }}
-              transition={{ duration: 3.2 + particle.id * 0.2, repeat: Infinity, delay: particle.delay }}
-            />
-          ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   )

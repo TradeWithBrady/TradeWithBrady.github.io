@@ -11,11 +11,6 @@
     <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".7"/></filter>
     <clipPath id="circle"><circle cx="600" cy="440" r="420"/></clipPath>
   </defs>
-  <style>
-    .hero{transform-origin:600px 420px;animation:float 3.4s ease-in-out infinite}.arrow{transform-origin:870px 450px;animation:arrow 1.9s ease-in-out infinite}.ring{transform-origin:600px 440px;animation:ring 4s ease-in-out infinite}.eye{animation:eye 1.15s ease-in-out infinite alternate}.candle{transform-origin:center bottom;animation:candle 2.1s ease-in-out infinite alternate}.c2{animation-delay:.2s}.c3{animation-delay:.4s}.c4{animation-delay:.6s}.c5{animation-delay:.8s}.c6{animation-delay:1s}
-    @keyframes float{50%{transform:translateY(-13px) rotate(-.6deg)}}@keyframes arrow{50%{transform:translate(9px,-9px) scale(1.035)}}@keyframes ring{50%{opacity:1;filter:drop-shadow(0 0 18px #24dfff)}}@keyframes eye{to{opacity:.35}}@keyframes candle{to{transform:scaleY(1.08);filter:brightness(1.3)}}
-    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
-  </style>
   <rect width="1200" height="900" fill="transparent"/>
   <circle cx="600" cy="440" r="445" fill="url(#halo)"/>
   <circle class="ring" cx="600" cy="440" r="416" fill="none" stroke="url(#blue)" stroke-width="5" opacity=".85" filter="url(#glow)"/>
