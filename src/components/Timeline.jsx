@@ -26,9 +26,10 @@ export default function Timeline() {
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: index * 0.08 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="rounded-3xl border border-white/10 bg-white/6 p-6 backdrop-blur-xl"
+              className="relative rounded-[1.75rem] border border-white/10 bg-white/6 p-6 backdrop-blur-xl"
             >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full border border-cyan-400/30 bg-cyan-400/10 text-sm font-semibold text-cyan-300">
+              <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0" />
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full border border-cyan-400/30 bg-cyan-400/10 text-sm font-semibold text-cyan-300">
                 0{index + 1}
               </div>
               <h3 className="text-xl font-semibold text-white">{step.title}</h3>

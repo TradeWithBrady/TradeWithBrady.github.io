@@ -8,6 +8,8 @@ const entries = [
 ]
 
 export default function Journal() {
+  const icons = ['✦', '↗', '⚠', '◎']
+
   return (
     <section id="journal" className="px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-7xl">
@@ -25,8 +27,11 @@ export default function Journal() {
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: index * 0.07 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6 backdrop-blur-xl"
+              className="rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6 backdrop-blur-xl"
             >
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full border border-cyan-400/20 bg-cyan-400/10 text-lg text-cyan-300">
+                {icons[index]}
+              </div>
               <h3 className="text-xl font-semibold text-white">{entry.title}</h3>
               <p className="mt-4 text-sm leading-7 text-slate-400">{entry.text}</p>
             </motion.article>
