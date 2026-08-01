@@ -1,80 +1,19 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TradeWithBrady — disciplined swing trading, long-term investing, risk management, and market insights." />
-  <meta name="theme-color" content="#030712" />
-  <title>TradeWithBrady</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/styles.css" />
-  <link rel="stylesheet" href="/src/bull-fix.css" />
-  <style>
-    body{background:#020712;color:#f6f8fb}.static-bull{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:2;filter:drop-shadow(0 0 24px rgba(43,212,255,.3));animation:bullFloat 3.4s ease-in-out infinite}.loading-fallback{position:fixed;inset:0;display:grid;place-items:center;background:#020712;color:#fff;z-index:9999;transition:opacity .35s}.loading-fallback.hide{opacity:0;pointer-events:none}.loading-ring{width:54px;height:54px;border:3px solid rgba(255,255,255,.12);border-top-color:#20e77d;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-  </style>
-</head>
-<body>
-  <div id="page-loader" class="loading-fallback"><div class="loading-ring"></div></div>
-  <div class="site-shell">
-    <header class="nav-wrap">
-      <div class="brand">
-        <div class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M9 25C14 12 27 9 37 17C44 10 55 12 59 21C51 20 47 24 46 30C44 42 35 49 24 47C16 45 10 38 9 25Z"/><path d="M18 21C12 15 7 15 4 17C9 22 11 26 14 31"/><path d="M44 20C49 13 55 11 61 13C56 18 53 22 50 28"/><path d="M14 45L26 56L52 22"/><path d="M44 22H58V36"/></svg></div>
-        <div class="brand-copy"><strong>TRADEWITH<span>BRADY</span></strong><small>LOGIC OVER EMOTION</small></div>
-      </div>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
-      <nav id="mainNav"><a href="#home">Home</a><a href="#about">About</a><a href="#approach">Approach</a><a href="#dashboard">Dashboard</a><a href="#journal">Journal</a><a href="#resources">Resources</a><a href="#disclaimer">Disclaimer</a></nav>
-      <a class="follow-btn" href="https://x.com/TradeWithMeOnX" target="_blank" rel="noreferrer">Follow on X ↗</a>
-    </header>
-
-    <main>
-      <section id="home" class="hero-grid-section page-width">
-        <div class="hero-copy">
-          <p class="eyebrow">SWING TRADER • LONG-TERM INVESTOR • RISK MANAGER</p>
-          <h1>Trade with<br><span>logic.</span><br><em>Not emotion.</em></h1>
-          <p class="lead">A personal market journal built around disciplined execution, thoughtful risk management, and continuous improvement.</p>
-          <div class="hero-actions"><a class="primary-btn" href="#dashboard">Explore Dashboard →</a><a class="secondary-btn" href="#journal">View Journal ▣</a></div>
-          <div class="reader-row"><div class="reader-dots"><i></i><i></i><i></i><i></i><span>+250</span></div><small>Trusted by readers on X</small></div>
-        </div>
-
-        <div class="bull-stage">
-          <div class="bull-radial"></div>
-          <img class="static-bull" src="/bull-premium.svg" alt="Animated blue charging bull with TradeWithBrady branding" />
-          <svg class="hero-line" viewBox="0 0 700 520" aria-hidden="true"><path d="M10 480C95 452 95 398 164 412S257 370 304 329S381 322 422 255S504 242 545 170S625 153 686 70"/></svg>
-          <div class="candles"><i style="height:18%"></i><i style="height:31%"></i><i style="height:44%"></i><i style="height:42%"></i><i style="height:57%"></i><i style="height:70%"></i><i style="height:68%"></i><i style="height:82%"></i><i style="height:95%"></i></div>
-          <div class="sparks"><i style="left:10%;top:18%"></i><i style="left:25%;top:50%"></i><i style="left:43%;top:22%"></i><i style="left:61%;top:36%"></i><i style="left:77%;top:16%"></i><i style="left:88%;top:46%"></i></div>
-        </div>
-
-        <aside class="hero-widgets">
-          <article class="glass widget"><small>● MARKET PULSE</small><span>S&amp;P 500</span><strong>5,278.40</strong><b>+1.23%</b><svg viewBox="0 0 120 42"><path d="M2 34L18 25L29 30L42 17L56 20L70 10L82 15L95 6L118 3"/></svg></article>
-          <article class="glass widget"><small>● FEAR &amp; GREED INDEX</small><div class="gauge"><div class="gauge-ring"></div><div><strong>64</strong><span>Greed</span></div></div></article>
-          <article class="glass widget trend"><small>● MARKET TREND</small><strong>BULLISH</strong><p>Momentum is strong across major indices.</p><span class="tiny-bull">♉</span></article>
-        </aside>
-      </section>
-
-      <section class="ticker-strip"><div class="ticker-track"><div><b>SPY</b><span>527.84</span><em>+1.26%</em></div><div><b>QQQ</b><span>454.23</span><em>+1.48%</em></div><div><b>NVDA</b><span>1,168.88</span><em>+2.35%</em></div><div><b>AMD</b><span>162.45</span><em>+1.89%</em></div><div><b>AAPL</b><span>198.11</span><em>+0.85%</em></div><div><b>MSFT</b><span>432.64</span><em>+0.71%</em></div><div><b>SPY</b><span>527.84</span><em>+1.26%</em></div><div><b>QQQ</b><span>454.23</span><em>+1.48%</em></div></div></section>
-
-      <section id="dashboard" class="dashboard page-width">
-        <article class="glass equity-card"><div class="card-title"><div><small>EQUITY CURVE (ILLUSTRATIVE)</small><strong class="positive">+132.7%</strong></div><button>All Time⌄</button></div><svg viewBox="0 0 760 300"><defs><linearGradient id="eqFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20e77d" stop-opacity=".4"/><stop offset="1" stop-color="#20e77d" stop-opacity="0"/></linearGradient></defs><g class="grid-lines"><path d="M25 50H735M25 100H735M25 150H735M25 200H735M25 250H735"/></g><path d="M25 250C60 265 82 220 110 232S158 188 195 205S252 148 286 166S330 122 365 137S410 92 448 112S492 70 535 92S584 48 625 65S675 28 725 34L725 275L25 275Z" fill="url(#eqFill)"/><path d="M25 250C60 265 82 220 110 232S158 188 195 205S252 148 286 166S330 122 365 137S410 92 448 112S492 70 535 92S584 48 625 65S675 28 725 34" class="equity-line"/></svg></article>
-        <article class="glass summary-card"><small>PERFORMANCE SUMMARY</small><div class="summary-grid"><div class="stat-cell"><span>Total Return</span><strong class="positive">+132.7%</strong></div><div class="stat-cell"><span>Win Rate</span><strong>61.3%</strong></div><div class="stat-cell"><span>Profit Factor</span><strong>1.87</strong></div><div class="stat-cell"><span>Total Trades</span><strong>142</strong></div><div class="stat-cell"><span>Best Trade</span><strong class="positive">+18.4%</strong></div><div class="stat-cell"><span>Avg. Trade</span><strong class="positive">+1.32%</strong></div></div></article>
-        <article class="glass allocation-card"><small>ASSET ALLOCATION</small><div class="allocation"><div class="donut"><div><strong>65%</strong><span>Equities</span></div></div><ul><li><i class="green"></i>Equities <b>65%</b></li><li><i class="blue"></i>Cash <b>20%</b></li><li><i class="purple"></i>Options <b>10%</b></li><li><i class="gold"></i>Crypto <b>5%</b></li></ul></div></article>
-        <article id="approach" class="glass process-card"><small>TRADING PROCESS</small><div class="process"><div class="process-step"><span>⌕</span><b>1. Analyze</b><p>Scan markets and identify trends</p><i>→</i></div><div class="process-step"><span>▣</span><b>2. Plan</b><p>Build setups and define risk</p><i>→</i></div><div class="process-step"><span>◎</span><b>3. Execute</b><p>Follow the plan with discipline</p><i>→</i></div><div class="process-step"><span>▥</span><b>4. Review</b><p>Analyze results and learn</p><i>→</i></div><div class="process-step"><span>↗</span><b>5. Improve</b><p>Iterate and get better</p></div></div></article>
-        <article id="journal" class="glass list-card"><small>LATEST JOURNAL ENTRIES</small><ul><li><div><b>Breakout Play in NVDA</b><span>May 20, 2025</span></div><em>Swing</em></li><li><div><b>Managing Drawdowns</b><span>May 18, 2025</span></div><em>Mindset</em></li><li><div><b>Trend Following Rules</b><span>May 15, 2025</span></div><em>Process</em></li></ul><a href="#journal">View All Entries →</a></article>
-        <article id="resources" class="glass list-card"><small>TOP SETUPS WATCHLIST</small><ul><li><b>NVDA</b><span>Bull Flag</span><em class="high">High ↑</em></li><li><b>AAPL</b><span>Breakout</span><em class="medium">Medium ↑</em></li><li><b>QQQ</b><span>Pullback</span><em class="high">High ↑</em></li><li><b>SPY</b><span>Support Test</span><em class="medium">Medium ↑</em></li></ul><a href="#resources">View Watchlist →</a></article>
-      </section>
-
-      <section id="about" class="glass philosophy page-width"><div class="quote-mark">“</div><blockquote>The market does not reward urgency.<br>It rewards <span>preparation.</span></blockquote><div class="values"><div><b>✺</b><span>Discipline</span><small>Over Motivation</small></div><div><b>◉</b><span>Patience</span><small>Over Prediction</small></div><div><b>⚙</b><span>Process</span><small>Over Outcomes</small></div><div><b>♢</b><span>Risk First</span><small>Always</small></div><div><b>⬡</b><span>Protect Capital</span><small>Stay Alive</small></div></div></section>
-      <section id="disclaimer" class="disclaimer page-width">Educational and informational content only. Not financial, investment, tax, or legal advice. Trading and investing involve risk, including possible loss of principal.</section>
-    </main>
-    <footer><span>© <span id="year"></span> TradeWithBrady. All rights reserved.</span><span>Built with ♥ for traders.</span></footer>
-  </div>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const menuBtn=document.getElementById('menuBtn');const nav=document.getElementById('mainNav');
-    menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-    window.addEventListener('load',()=>setTimeout(()=>document.getElementById('page-loader').classList.add('hide'),150));
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TradeWithBrady — disciplined swing trading, long-term investing, risk management, and market insights." />
+    <meta name="theme-color" content="#030712" />
+    <meta name="color-scheme" content="dark" />
+    <title>TradeWithBrady</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to content</a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

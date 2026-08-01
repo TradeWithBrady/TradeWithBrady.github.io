@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">Neon bull</title>
+  <desc id="desc">A front-facing bull head with large curved horns, eyes, ears, muzzle and glowing geometric details.</desc>
+  <defs>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f7cff"/>
+      <stop offset="0.48" stop-color="#2bd4ff"/>
+      <stop offset="1" stop-color="#20e77d"/>
+    </linearGradient>
+    <radialGradient id="face" cx="50%" cy="36%" r="66%">
+      <stop offset="0" stop-color="#173a61" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#06111e" stop-opacity=".3"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="400" cy="330" rx="255" ry="245" fill="#1679ff" opacity=".12" filter="url(#softGlow)"/>
+
+  <g fill="none" stroke="url(#stroke)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- unmistakable wide horns -->
+    <path stroke-width="13" d="M333 180 C275 99 171 61 78 88 C142 106 183 148 190 211 C194 248 170 277 126 288 C199 306 264 268 294 219"/>
+    <path stroke-width="13" d="M467 180 C525 99 629 61 722 88 C658 106 617 148 610 211 C606 248 630 277 674 288 C601 306 536 268 506 219"/>
+
+    <!-- ears -->
+    <path stroke-width="9" fill="url(#face)" d="M285 213 C236 184 190 193 160 228 C206 220 242 235 269 266"/>
+    <path stroke-width="9" fill="url(#face)" d="M515 213 C564 184 610 193 640 228 C594 220 558 235 531 266"/>
+
+    <!-- face -->
+    <path stroke-width="11" fill="url(#face)" d="M400 156 C323 156 267 212 258 298 C250 377 289 469 349 521 C379 547 421 547 451 521 C511 469 550 377 542 298 C533 212 477 156 400 156 Z"/>
+
+    <!-- forehead ridge -->
+    <path stroke-width="5" d="M400 174 L400 407" opacity=".75"/>
+    <path stroke-width="4" d="M400 185 L318 271 L400 330 L482 271 Z" opacity=".62"/>
+    <path stroke-width="4" d="M318 271 L285 356 L400 330 L515 356 L482 271" opacity=".62"/>
+    <path stroke-width="4" d="M285 356 L346 445 L400 407 L454 445 L515 356" opacity=".62"/>
+
+    <!-- brows and eyes -->
+    <path stroke-width="10" d="M302 314 C330 291 360 294 382 314"/>
+    <path stroke-width="10" d="M418 314 C440 294 470 291 498 314"/>
+    <circle cx="346" cy="326" r="9" fill="#20e77d" stroke="none"/>
+    <circle cx="454" cy="326" r="9" fill="#20e77d" stroke="none"/>
+
+    <!-- cheek structure -->
+    <path stroke-width="6" d="M292 350 C310 405 334 438 367 457"/>
+    <path stroke-width="6" d="M508 350 C490 405 466 438 433 457"/>
+
+    <!-- muzzle -->
+    <path stroke-width="9" fill="#071522" d="M336 425 C355 395 445 395 464 425 C481 451 461 504 400 520 C339 504 319 451 336 425 Z"/>
+    <ellipse cx="366" cy="455" rx="13" ry="9" fill="#2bd4ff" stroke="none"/>
+    <ellipse cx="434" cy="455" rx="13" ry="9" fill="#20e77d" stroke="none"/>
+    <path stroke-width="6" d="M400 468 L400 500"/>
+
+    <!-- lower jaw -->
+    <path stroke-width="8" d="M363 510 C379 530 421 530 437 510"/>
+  </g>
+</svg>
